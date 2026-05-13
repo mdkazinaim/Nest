@@ -1,0 +1,22 @@
+info:
+  name: CreateUser
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3001/users/create_user
+  body:
+    type: json
+    data: |-
+      {
+        "name":"User"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​
